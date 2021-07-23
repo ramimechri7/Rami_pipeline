@@ -6,6 +6,7 @@ pipeline {
 
         stage('build') {
             steps{
+                    tool name: 'Maven_3_8_1', type: 'maven'
                     sh 'mvn clean compile'
             }
         }
